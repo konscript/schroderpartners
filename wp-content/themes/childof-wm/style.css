@@ -1,0 +1,11 @@
+/*
+Theme Name: Schroder Partners
+Description: Child theme of Wooden Mannequin 
+Author: Jonathan Burrows
+Template: wooden-mannequin
+*/
+
+@import url("../wooden-mannequin/style.css");
+
+body {background-color:#e1e1e1;}
+#frontphoto {margin:auto; margin-left:20px;}
