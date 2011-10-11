@@ -1,0 +1,13 @@
+/* line 1, ../sass/page-structure.scss */
+body {
+  padding-bottom: 50px;
+}
+
+/* line 5, ../sass/page-structure.scss */
+.wrapper {
+  background: #FFF;
+  margin: 0 auto;
+  min-height: 500px;
+  width: 860px;
+  padding: 25px 15px;
+}

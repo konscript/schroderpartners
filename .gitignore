@@ -6,7 +6,10 @@
 /*
 .DS_Store
 !.gitignore
+<<<<<<< HEAD
 !README.md
+=======
+>>>>>>> 167d48e330f1175933507c3f4363da7dcecb8600
 !wp-content/
 
 # Ignore everything in the "wp-content" directory, except the "plugins" and "themes" directories.
@@ -23,3 +26,6 @@ wp-content/plugins/*
 wp-content/themes/*
 !wp-content/themes/konscript/
 wp-content/themes/konscript/stylesheet/.sass-cache
+!wp-content/themes/wooden-mannequin/
+!wp-content/themes/childof-wm/
+!wp-content/themes/schroderpartners/
