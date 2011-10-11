@@ -1,0 +1,361 @@
+/**
+ * Main (main.scss)
+ */
+
+// Load the WP defaults and base
+@import "_wordpress";
+@import "_base";
+
+// Default blueprint setup on the body
+body.bp {
+  @include blueprint-typography(true);
+  @include blueprint-utilities;
+  @include blueprint-debug;
+  @include blueprint-interaction;
+}
+
+// Default blueprint setup for forms
+form.bp {
+  @include blueprint-form;
+}
+
+/**
+ * 1. Body
+ ************************************************/
+
+// Contains everything
+body {}
+	#body-wrapper {
+		@include container;
+	}
+
+/**
+ * 2. Header
+ ************************************************/
+
+// Contains entire header
+#header-container {}
+	#header {}
+
+		// Site title
+		#site-title {
+			a {}
+				a span {}
+		}
+
+		// Site description/tagline
+		#site-description {}
+
+	/**
+	 * 2.1 Primary Menu
+	 ************************************************/
+
+	// Wrapper for entire menu area
+	#primary-menu {
+
+		// Wrapper for unordered list of menu items
+		div.menu {}
+
+			// Menu list.
+			ul {}
+				li {}
+					li a {}
+				li.current-menu-item {}
+		}
+		
+/**
+ * 3. Content
+ ************************************************/
+
+// Contains site's main content
+#content-container {}
+	#content {}
+
+		// Breadcrumb trail
+		.breadcrumb {}
+			.breadcrumb-trail {}
+
+		// Archive and search <div> before posts are listed
+		.archive-info
+		.author-info {}
+		.term-info
+		.category-info {}
+		.tag-info {}
+		.date-info {}
+		.search-info {}
+
+			// Archive and search page titles.
+			.archive-title
+			.author-title {}
+			.term-title {}
+			.category-title {}
+			.tag-title {}
+			.date-title {}
+			.search-title {}
+
+		// Entry wrapper <div>
+		.hentry {}
+		.post {}
+		.page {}
+
+			// Post, page, and 404 page titles
+			.entry-title {}
+			.post-title {}
+			.page-title {}
+			.attachment-title {}
+			.error-404-title {}
+
+			// Author and date byline
+			.byline {}
+
+			// Full entries
+			.entry-content {}
+
+			// Excerpts (introduced)
+			.entry-summary {}
+
+				// Using <!--nextpage-->
+				p.page-links a {}
+
+				// More link <!--more-->
+				a.more-link {}
+
+			// Entry metadata
+			.entry-meta {}
+
+		// Post series
+		.series {} 
+			.series-title {}
+
+		// Navigation links
+		.navigation-links {
+			.previous {}
+			.next {}
+		}
+
+		// WP PageNavi (plugin)
+		.wp-pagenavi {
+			.pages {}
+			.current {}
+			.extend {}
+			a {}
+		}
+		
+		// Attachment image navigation
+		.navigation-attachment {}
+
+	/**
+	 * 3.1 Comments template
+	 ************************************************/
+
+	// Wrapper for entire comments area
+	#comments-template {}
+
+		// Comments section headers/titles
+		.comments-header {}
+		#comments-number {}
+
+		// Comments closed paragraph
+		p.comments-closed {}
+
+			// Main comments section
+			#comments {
+				ol {}
+
+					// Individual comments (note that WordPress has even/odd backwards)
+					li {}
+						li li {}
+							li li li {}
+								li li li li {}
+					li.even {}
+					li.odd {}
+					li.thread-even {}
+					li.thread-odd {}
+					li.author {}
+					li.trackback {}
+					li.pingback {}
+
+						// Comment avatars
+						.avatar {}
+
+						// Comment metadata
+						.comment-meta {}
+							.comment-meta cite {}
+
+						// Comment text
+						.comment-text {}
+			}
+
+				// Paged comments navigation
+				#comments-template .paged-navigation {}
+					#comments-template .paged-navigation .page-numbers {}
+					#comments-template .paged-navigation .next {}
+					#comments-template .paged-navigation .prev {}
+
+			// Main comment form div
+			#respond {}
+
+				// Comment form title
+				#reply {}
+
+				// Comment form elements
+				p#cancel-comment-reply {}
+				#respond form {}
+					#respond .form-author {}
+						#respond input {}
+					#respond .form-email {}
+					#respond .form-url {}
+					#respond .form-textarea {}
+						#respond textarea {}
+					#respond #submit {}
+						#respond #submit:hover {}
+
+	/**
+	 * 3.2 Widget sections (Primary and Secondary)
+	 ************************************************/
+
+	// Widgets in general
+	.widget {}
+		.widget-inside {}
+			.widget-title {}
+
+	// Primary widget section
+	#sidebar-primary {
+		.widget {}
+			.widget-inside {}
+				.widget-title {}
+				.widget ul {}
+					.widget ul li {}
+	}
+
+/**
+ * 4. Footer
+ ************************************************/
+
+// Wrapper for the entire footer
+#footer-container {}
+	#footer {
+
+		// Footer extra
+		.copyright {}
+		.credit {}
+	}
+		
+/**
+ * 5. Elements (default styling)
+ ************************************************/
+
+// Hyperlinks 
+a:link {}
+a:visited {}
+a:hover {}
+a:active {}
+
+// Headers 
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+// Text elements 
+strong {}
+em {}
+cite {}
+abbr {}
+acronym {}
+sup {}
+sub {}
+address {}
+ins {}
+dfn {}
+del {}
+
+// Paragraphs 
+p {}
+
+// Unordered lists 
+ul {}
+	ul li {}
+
+// Ordered lists 
+ol {}
+	ol li {}
+
+// Defition lists 
+dl {}
+	dt {}
+	dd {}
+
+// Blockquotes 
+blockquote {}
+	blockquote blockquote {}
+	blockquote em {}
+
+// Object 
+object {}
+
+// Code 
+code {}
+pre {}
+pre code {}
+
+// Tables 
+table {}
+	caption {}
+	tr {}
+	th {}
+	td {}
+
+// Forms 
+form {}
+	textarea {}
+	input {}
+	label {}
+	option {}
+
+// Notes 
+.note {}
+
+// Warnings/Alerts
+.warning, .alert {}
+
+// Errors
+.error {}
+
+// Downloads
+.download {}
+
+// Alignment
+.left, .alignleft {}
+.right, .alignright {}
+.center, .aligncenter {}
+.block, .alignnone {}
+.clear {}
+
+/**
+ * 6. Images
+ ************************************************/
+
+// Normal images
+img {}
+a img {}
+
+// WP Smilies
+img.wp-smiley {}
+
+// Thumbnails
+.thumbnail {}
+
+// WP Captions [caption]
+.wp-caption {}
+	.wp-caption img {}
+	.wp-caption p {}
+
+// Gallery [gallery]
+.gallery {}
+	.gallery img {}
+
+// Avatars
+.avatar {}		

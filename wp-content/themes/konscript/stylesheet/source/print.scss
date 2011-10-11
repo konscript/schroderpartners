@@ -1,0 +1,11 @@
+/**
+ * Print (print.scss)
+ */
+
+// Load the WP defaults and base
+@import "_wordpress";
+@import "_base";
+
+//Recommended Blueprint configuration with scoping and semantic layout:
+body.bp {
+  @include blueprint-print(true); }
