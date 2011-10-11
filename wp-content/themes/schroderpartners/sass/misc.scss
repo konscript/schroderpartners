@@ -24,15 +24,35 @@ body {
 	}
 	
 	.contact-module {
-		background-color: rgb(0, 87, 147);
-		min-height: 150px;
+		background-color: rgb(0, 97, 146);
+		height: 158px;
+		
+		.contact-images {
+			width: 350px;
+			
+			li {
+				float: left;
+				height: 70px;
+				margin: 6px 0 0 6px;
+				
+				a {
+					img {
+						height: 70px;
+					}
+				}
+			}
+		}
+		
+		.contact-image {
+			
+		}
 	}
 }
 
 .container {
 	margin-bottom: 20px;
 	
-	.top-navigation {
+	.top-navigation, .footer-navigation {
 		float: left;
 		margin: 5px 0;
 		
@@ -55,7 +75,7 @@ body {
 			}
 		}
 		
-		.current_page_item { // Class set by WordPress
+		.current_page_item, .current-page-ancestor { // Class set by WordPress
 			background: url('../images/bullet-point-blue.gif') center left no-repeat;
 			
 			a {
@@ -110,8 +130,7 @@ body {
 		}
 	}
 	
-	.post {
-		
+	.page {
 		.title {	
 			color: #474845;
 			font-family: Verdana;
@@ -149,6 +168,131 @@ body {
 			}
 		}
 	}
+	
+	.post {
+		margin-bottom: 20px;
+		
+		.header {
+			background: rgb(234, 234, 234);
+			padding: 3px 5px;
+			
+			.post-title {
+				color: rgb(20, 29, 88);
+				float: left;
+				font-weight: bold;
+				margin-right: 5px;
+				text-decoration: none;
+			}
+			
+			.post-date {
+				color: #888;
+				font-size: 0.9em;
+			}
+		}
+		
+		.page-thumbnail {
+			float: right;
+			margin-left: 10px;
+		}
+		
+		.entry {
+			padding: 5px;
+		}
+	}
+	
+	.single {
+		.go-back {
+			color: $link-blue;
+			font-size: 1em;
+			font-weight: bold;
+			padding-left: 5px;
+			text-decoration: none;
+
+			&:hover {
+				color: $link-blue / 1.4;
+			}
+		}
+	}
+	
+	.single-sp_contact {
+		
+		table td {
+			border: none;
+			padding: 0 0 10px 0;
+			
+			&.head {
+				color: #003066;
+				font-weight: bold;
+				width: 109px;
+				padding-right: 10px;
+			}
+			
+			&.period {
+				width: 119px;
+			}
+		}
+		
+		.header {
+			background: none;
+			margin-bottom: 15px;
+			position: relative;
+			
+			a {
+				color: $link-blue;
+			}
+			
+			.contact-thumbnail { 
+				float: left; 
+				margin-right: 20px;
+			}
+			
+			.title { margin: 0;	}
+			
+			.contact-info {
+				position: relative;
+				top: -1px;
+				
+				li { margin-bottom: 1px; }
+				
+				table td {
+					border: none;
+					padding: 0;
+					
+					&.number {
+						padding-left: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.newsletter {
+	.wpcf7-list-item {
+		display: block;
+		float: left;
+		width: 550px;
+	}
+	
+	.wpcf7-list-item-label {
+		float: left;
+		width: 200px;
+	}
+	
+	.text-field-label {
+		float: left;
+		display: block;
+		padding-left: 5px;
+		width: 200px;
+	}
+	
+	input[type=text] {
+		float: left;
+	}
+	
+	input[type=submit] {
+		margin-left: 207px;
+	}
 }
 
 #frontpage {
@@ -168,16 +312,39 @@ body {
 		padding: 0 13px;
 		width: 200px;
 		
-		li {				
-			.date {
-				border-bottom: 1px solid #EEE;
-				font-weight: bold;
+		ul {
+			margin-bottom: 20px;
+			
+			li {
+				margin-bottom: 10px;
+						
+				.date {
+					border-bottom: 1px solid #EEE;
+					font-weight: bold;
+				}
+			
+				.title a {
+					color: #555;
+					text-decoration: none;
+				}
+			}
+		}
+		
+		.more-news {
+			color: $link-blue;
+			font-size: 1em;
+			font-weight: bold;
+			text-decoration: none;
+		
+			&:hover {
+				color: $link-blue / 1.4;
 			}
 		}
 	}
 	
 	.content {
 		float: left;
+		//margin-left: 10px;
 		width: 400px;
 	}
 	
@@ -194,6 +361,36 @@ body {
 				font-size: 1.1em;
 				font-weight: bold;
 				text-decoration: none;
+				
+				&:hover {
+					color: $link-blue / 1.4;
+				}
+			}
+		}
+	}
+	
+	.bottom-menu {
+		margin: 45px 0 0 13px;
+		
+		.headline {
+			margin-bottom: 10px;
+		}
+		
+		.certified-adviser {
+			float: right;
+			
+			.headline {
+				text-align: right;
+			}
+		}
+		
+		.footer-navigation {
+			margin: 0;
+			
+			li {
+				line-height: 1em;
+				padding: 0 0 0 15px;
+				width: 110px
 			}
 		}
 	}

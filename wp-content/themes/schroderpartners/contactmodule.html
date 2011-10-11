@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>jQuery Contact Module Test</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" charset="utf-8"></script>
+
+  <style type="text/css" media="screen">
+  
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+       v2.0 | 20110126
+       License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+    	margin: 0;
+    	padding: 0;
+    	border: 0;
+    	font-size: 100%;
+    	font: inherit;
+    	vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+    	display: block;
+    }
+    body {
+    	line-height: 1;
+    }
+    ol, ul {
+    	list-style: none;
+    }
+    blockquote, q {
+    	quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    	content: '';
+    	content: none;
+    }
+    table {
+    	border-collapse: collapse;
+    	border-spacing: 0;
+    }
+    
+    body { font-family: Arial; font-size: 11px; }
+  
+    .contact-module {
+      background-color: #123456; 
+      float: left;
+      margin: 50px auto;
+      width: 900px;
+    }
+    
+    .contact-info {
+      background-color: #2468AC;
+      float: right;
+      width: 500px;
+    }
+    
+    .contact-info li              { display: none; }
+    .contact-info li:first-child  { display: block; }
+    .contact-info img             { float: right; }
+    .contact-info .info           { padding: 10px; }
+    .contact-info .info h2        { border-bottom: 2px solid #FFF; color: #FFF; font-size: 2em;}
+    .contact-info .info p         { color: #FFF; }
+  
+    .thumbs { 
+      float: left;
+      list-style-type: none;
+    }
+    
+    .thumbs img { width: 50px; }
+  </style>
+  
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      
+      var firstElement = $(".contact-module .thumbs li a").first();
+      
+      $(".contact-module .thumbs li a").click(function() {
+        var pressedElement = $(this);
+        
+        $(".contact-info .current").fadeOut(300 ,function() {
+          $(this).removeClass('current');
+          
+          var newElement = $('.contact-info ' + pressedElement.attr('href'));
+          newElement.addClass('current').fadeIn(300, function() {
+                        
+              if(pressedElement.parent().next().length == 0) {
+                firstElement.trigger("click");
+              } else {
+                pressedElement.parent().next().find("a").trigger("click");
+              }
+          });
+          
+        });
+      });
+      
+      
+      
+      // setInterval(clickNext, 5000);
+      // function clickNext() {
+      //   $(".contact-module .thumbs li a").first().trigger('click');
+      // }
+    });
+  </script>
+  
+</head>
+<body>
+<div class="contact-module">
+  <ul class="thumbs">
+    <li><a href="#id_1"><img src="images/knud.png" /></a></li>
+    <li><a href="#id_2"><img src="images/gert.png" /></a></li>
+    <li><a href="#id_3"><img src="images/gert.png" /></a></li>
+  </ul>
+  
+  <ul class="contact-info">
+    <li id="id_1" class="current">
+      <img src="images/knud.png" />
+      <div class="info">
+        <h2>Knud F. Marker</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </li>
+    <li id="id_2">
+      <img src="images/gert.png" />
+      <div class="info">
+        <h2>Gert Mortensen</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </li>
+    <li id="id_3">
+      <img src="images/gert.png" />
+      <div class="info">
+        <h2>Gert Mortensen</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+</body>
+</html>

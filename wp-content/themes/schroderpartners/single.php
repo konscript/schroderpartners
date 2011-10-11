@@ -29,37 +29,43 @@
           <tr>
             <td class="sidebar">
               <?php
-                // Get the ID of the set menu
-                $menu_id = get_menu_for_page($post->ID);
-
-                // print the menu if set
-                if($menu_id > 0) {
-                  wp_nav_menu(array(
-                    'menu'        => $menu_id,
-                    'container'   => false,
-                    'menu_class'  => 'sidebar-menu'
-                  ));
-                }
+                // This should be changed so the menus can be changed dynamically
+                wp_nav_menu(array(
+                  'theme_location'  => 'profile_menu',
+                  'container'       => false,
+                  'menu_class'      => 'sidebar-menu'
+                ));
               ?>
             </td>
             
-            <td>                
+            <td>
+              <div class="page">
+                   
               <?php if(have_posts()) : while(have_posts()) : the_post() ?>
-                <div class="page">
+
+                <div class="post single">
                 
-                  <h2 class="title"><?php the_title(); ?></h2>
-                  
-                  <?php the_post_thumbnail('post-thumbnail', array('class' => 'page-thumbnail')); ?>
-                  
+                  <div class="header">
+                    <a href="<?php the_permalink(); ?>" class="post-title">
+                      <?php the_title(); ?>
+                    </a>
+                    <p class="post-date">
+                      <?php the_time("[d.m.Y]"); ?>
+                    </p>
+                  </div>
+                                  
                   <div class="entry">
                     <?php the_content(); ?>
                   </div>
-                    
-                  </div>
+                                    
+                  <!-- The following breaks if the page "Nyheder" is renamed -->
+                  <?php $news_url = get_permalink(get_page_by_title('Nyheder')->ID); ?>
+                  <a class="go-back" href="<?php echo $news_url; ?>">Tilbage til Nyheder</a>
                   
                 </div>
               <?php endwhile; ?>
               <?php endif; ?>
+              </div>
             </td>
           </tr>
         </table>
