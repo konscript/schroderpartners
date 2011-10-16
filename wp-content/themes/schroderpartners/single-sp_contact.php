@@ -96,7 +96,7 @@
                 <?php foreach($career_info['career'] as $key => $career): ?>
                   <tr>
                     <td class="period"><?php echo $career['period']; ?></td>
-                    <td><?php echo $career['description']; ?></td>
+                    <td><?php echo nl2br($career['description']); ?></td>
                     </td>
                   </tr>
                 <?php endforeach; ?>
