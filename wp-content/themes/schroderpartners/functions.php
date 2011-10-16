@@ -9,6 +9,9 @@ if (is_admin()) {
   wp_enqueue_script('jquery-textarea-autoresize', get_stylesheet_directory_uri() . '/javascript/jquery.autoresize.js');
 }
 
+
+
+
 /**
 #########################################################
 # Include the necessary files for the theme to function #
@@ -28,8 +31,8 @@ add_theme_support('post-thumbnails');
 
 // Add relevant image sizes
 add_image_size('contact-module-big',    123, 158, false);
+add_image_size('contact-module-thumb',  58, 70, true);
 add_image_size('contact-thumbnail',     096, 128, true);
-//add_image_size('contact-module-big',    123, 158, false);
 
 /**
 ##########################################

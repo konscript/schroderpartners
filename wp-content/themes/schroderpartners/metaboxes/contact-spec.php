@@ -27,6 +27,15 @@ $general_mb = new WPAlchemy_MetaBox(array(
   'template'  => get_stylesheet_directory() . '/metaboxes/contact-general-meta.php'
 ));
 
+$contact_module_mb = new WPAlchemy_MetaBox(array(
+  'id'        => '_contact_module_meta',
+  'title'     => 'Contact Module Options',
+  'types'     => array('sp_contact'),
+  'context'   => 'side',
+  'priority'  => 'high',
+  'template'  => get_stylesheet_directory() . '/metaboxes/contact-module-meta.php'
+));
+
 /* eof */
 
 
