@@ -22,30 +22,68 @@ body {
 			margin: 0 auto;
 		}
 	}
+
+}
+
 	
-	.contact-module {
-		background-color: rgb(0, 97, 146);
-		height: 158px;
+#contact-module {
+	background-color: rgb(0, 97, 146);
+	height: 158px;
+
+	.contact-images {
+		float: left;
+		width: 326px;
+	
+		li {
+			float: left;
+			height: 70px;
+			margin: 6px 0 0 6px;
+		}
 		
-		.contact-images {
-			width: 350px;
+		.inactive { display: none; }
+	}
+
+	#contact-info {
+		background: url('../images/contact-info-background.png') top left no-repeat;
+		color: #FFF;
+		float: right;
+		width: 534px;
+		
+		.contact {
+			position: relative;
+			height: 158px;
+						
+			.contact-thumbnail-big {
+				float: right;
+				margin-left: 20px;
+			}
 			
-			li {
-				float: left;
-				height: 70px;
-				margin: 6px 0 0 6px;
-				
-				a {
-					img {
-						height: 70px;
-					}
-				}
+			.contact-name {
+				border-bottom: 2px solid #FFF;
+				font-family: "Webdings";
+				font-size: 2.0em;
+				margin-left: 10px;
+				padding: 10px 0;
+				width: 510px - 123px - 20px;
+			}
+			
+			.contact-content {
+				margin-left: 10px;
+			}
+			
+			.read-more {
+				bottom: 10px;
+				color: #FFF;
+				font-weight: bold;
+				left: 10px;
+				position: absolute;
+				text-decoration: none;
 			}
 		}
-		
-		.contact-image {
-			
-		}
+	}
+	
+	.contact-image {
+	
 	}
 }
 
