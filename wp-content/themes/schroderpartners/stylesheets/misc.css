@@ -202,26 +202,27 @@ body {
 /* line 210, ../sass/misc.scss */
 .container .page .entry ol {
   list-style-type: decimal;
+  list-style-position: inside;
 }
-/* line 213, ../sass/misc.scss */
+/* line 214, ../sass/misc.scss */
 .container .page .entry ol li {
   margin-bottom: 10px;
 }
-/* line 218, ../sass/misc.scss */
+/* line 219, ../sass/misc.scss */
 .container .page .entry .alignleft {
   float: left;
   margin: 0 10px 10px 0;
 }
-/* line 225, ../sass/misc.scss */
+/* line 226, ../sass/misc.scss */
 .container .post {
   margin-bottom: 20px;
 }
-/* line 228, ../sass/misc.scss */
+/* line 229, ../sass/misc.scss */
 .container .post .header {
   background: #eaeaea;
   padding: 3px 5px;
 }
-/* line 232, ../sass/misc.scss */
+/* line 233, ../sass/misc.scss */
 .container .post .header .post-title {
   color: #141d58;
   float: left;
@@ -229,21 +230,21 @@ body {
   margin-right: 5px;
   text-decoration: none;
 }
-/* line 240, ../sass/misc.scss */
+/* line 241, ../sass/misc.scss */
 .container .post .header .post-date {
   color: #888;
   font-size: 0.9em;
 }
-/* line 246, ../sass/misc.scss */
+/* line 247, ../sass/misc.scss */
 .container .post .page-thumbnail {
   float: right;
   margin-left: 10px;
 }
-/* line 251, ../sass/misc.scss */
+/* line 252, ../sass/misc.scss */
 .container .post .entry {
   padding: 5px;
 }
-/* line 257, ../sass/misc.scss */
+/* line 258, ../sass/misc.scss */
 .container .single .go-back {
   color: #44879c;
   font-size: 1em;
@@ -251,206 +252,206 @@ body {
   padding-left: 5px;
   text-decoration: none;
 }
-/* line 264, ../sass/misc.scss */
+/* line 265, ../sass/misc.scss */
 .container .single .go-back:hover {
   color: #30606f;
 }
-/* line 272, ../sass/misc.scss */
+/* line 273, ../sass/misc.scss */
 .container .single-sp_contact table td {
   border: none;
   padding: 0 0 10px 0;
 }
-/* line 276, ../sass/misc.scss */
+/* line 277, ../sass/misc.scss */
 .container .single-sp_contact table td ul.no-style {
   margin-bottom: 5px;
   margin-left: 0;
   padding-left: 0;
 }
-/* line 281, ../sass/misc.scss */
+/* line 282, ../sass/misc.scss */
 .container .single-sp_contact table td ul.no-style li {
   list-style-image: none;
   margin-bottom: 5px;
   text-indent: 0;
 }
-/* line 288, ../sass/misc.scss */
+/* line 289, ../sass/misc.scss */
 .container .single-sp_contact table td.head {
   color: #003066;
   font-weight: bold;
   width: 109px;
   padding-right: 10px;
 }
-/* line 295, ../sass/misc.scss */
+/* line 296, ../sass/misc.scss */
 .container .single-sp_contact table td.period {
   width: 119px;
 }
-/* line 300, ../sass/misc.scss */
+/* line 301, ../sass/misc.scss */
 .container .single-sp_contact .header {
   background: none;
   margin-bottom: 15px;
   position: relative;
 }
-/* line 305, ../sass/misc.scss */
+/* line 306, ../sass/misc.scss */
 .container .single-sp_contact .header a {
   color: #44879c;
 }
-/* line 309, ../sass/misc.scss */
+/* line 310, ../sass/misc.scss */
 .container .single-sp_contact .header .contact-thumbnail {
   float: left;
   margin-bottom: 10px;
   margin-right: 20px;
 }
-/* line 315, ../sass/misc.scss */
+/* line 316, ../sass/misc.scss */
 .container .single-sp_contact .header .title {
   margin: 0;
 }
-/* line 317, ../sass/misc.scss */
+/* line 318, ../sass/misc.scss */
 .container .single-sp_contact .header .contact-info {
   position: relative;
   top: -1px;
 }
-/* line 321, ../sass/misc.scss */
+/* line 322, ../sass/misc.scss */
 .container .single-sp_contact .header .contact-info li {
   margin-bottom: 1px;
 }
-/* line 323, ../sass/misc.scss */
+/* line 324, ../sass/misc.scss */
 .container .single-sp_contact .header .contact-info table td {
   border: none;
   padding: 0;
 }
-/* line 327, ../sass/misc.scss */
+/* line 328, ../sass/misc.scss */
 .container .single-sp_contact .header .contact-info table td.number {
   padding-left: 20px;
 }
 
-/* line 337, ../sass/misc.scss */
+/* line 338, ../sass/misc.scss */
 .newsletter .wpcf7-list-item {
   display: block;
   float: left;
   width: 550px;
 }
-/* line 343, ../sass/misc.scss */
+/* line 344, ../sass/misc.scss */
 .newsletter .wpcf7-list-item-label {
   float: left;
   width: 200px;
 }
-/* line 348, ../sass/misc.scss */
+/* line 349, ../sass/misc.scss */
 .newsletter .text-field-label {
   float: left;
   display: block;
   padding-left: 5px;
   width: 200px;
 }
-/* line 355, ../sass/misc.scss */
+/* line 356, ../sass/misc.scss */
 .newsletter input[type=text] {
   float: left;
 }
-/* line 359, ../sass/misc.scss */
+/* line 360, ../sass/misc.scss */
 .newsletter input[type=submit] {
   margin-left: 207px;
 }
 
-/* line 364, ../sass/misc.scss */
+/* line 365, ../sass/misc.scss */
 #frontpage {
   margin-top: 30px;
   float: left;
 }
-/* line 368, ../sass/misc.scss */
+/* line 369, ../sass/misc.scss */
 #frontpage .headline {
   color: #44879c;
   font-size: 1.1em;
   font-weight: bold;
   margin-bottom: 20px;
 }
-/* line 375, ../sass/misc.scss */
+/* line 376, ../sass/misc.scss */
 #frontpage .sidebar-left {
   float: left;
   margin-right: 30px;
   padding: 0 13px;
   width: 200px;
 }
-/* line 381, ../sass/misc.scss */
+/* line 382, ../sass/misc.scss */
 #frontpage .sidebar-left ul {
   margin-bottom: 20px;
 }
-/* line 384, ../sass/misc.scss */
+/* line 385, ../sass/misc.scss */
 #frontpage .sidebar-left ul li {
   margin-bottom: 10px;
 }
-/* line 387, ../sass/misc.scss */
+/* line 388, ../sass/misc.scss */
 #frontpage .sidebar-left ul li .date {
   border-bottom: 1px solid #EEE;
   font-weight: bold;
 }
-/* line 392, ../sass/misc.scss */
+/* line 393, ../sass/misc.scss */
 #frontpage .sidebar-left ul li .title a {
   color: #555;
   text-decoration: none;
 }
-/* line 399, ../sass/misc.scss */
+/* line 400, ../sass/misc.scss */
 #frontpage .sidebar-left .more-news {
   color: #44879c;
   font-size: 1em;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 405, ../sass/misc.scss */
+/* line 406, ../sass/misc.scss */
 #frontpage .sidebar-left .more-news:hover {
   color: #30606f;
 }
-/* line 411, ../sass/misc.scss */
+/* line 412, ../sass/misc.scss */
 #frontpage .content {
   float: left;
   width: 400px;
 }
-/* line 417, ../sass/misc.scss */
+/* line 418, ../sass/misc.scss */
 #frontpage .sidebar-right {
   float: right;
   text-align: right;
   width: 200px;
 }
-/* line 422, ../sass/misc.scss */
+/* line 423, ../sass/misc.scss */
 #frontpage .sidebar-right ul li {
   margin-bottom: 0px;
 }
-/* line 425, ../sass/misc.scss */
+/* line 426, ../sass/misc.scss */
 #frontpage .sidebar-right ul li a {
   color: #44879c;
   font-size: 1.1em;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 431, ../sass/misc.scss */
+/* line 432, ../sass/misc.scss */
 #frontpage .sidebar-right ul li a:hover {
   color: #30606f;
 }
-/* line 438, ../sass/misc.scss */
+/* line 439, ../sass/misc.scss */
 #frontpage .bottom-menu {
   margin: 45px 0 0 13px;
 }
-/* line 441, ../sass/misc.scss */
+/* line 442, ../sass/misc.scss */
 #frontpage .bottom-menu .headline {
   margin-bottom: 10px;
 }
-/* line 445, ../sass/misc.scss */
+/* line 446, ../sass/misc.scss */
 #frontpage .bottom-menu .certified-adviser {
   float: right;
 }
-/* line 448, ../sass/misc.scss */
+/* line 449, ../sass/misc.scss */
 #frontpage .bottom-menu .certified-adviser .headline {
   text-align: right;
 }
-/* line 453, ../sass/misc.scss */
+/* line 454, ../sass/misc.scss */
 #frontpage .bottom-menu .footer-navigation {
   margin: 0;
 }
-/* line 456, ../sass/misc.scss */
+/* line 457, ../sass/misc.scss */
 #frontpage .bottom-menu .footer-navigation li {
   line-height: 1em;
   padding: 0 0 0 15px;
   width: 110px;
 }
 
-/* line 465, ../sass/misc.scss */
+/* line 466, ../sass/misc.scss */
 .footer {
   background-color: #005793;
   color: #FFF;
@@ -459,20 +460,20 @@ body {
   padding: 10px;
   width: 840px;
 }
-/* line 473, ../sass/misc.scss */
+/* line 474, ../sass/misc.scss */
 .footer .copyright {
   float: left;
 }
-/* line 477, ../sass/misc.scss */
+/* line 478, ../sass/misc.scss */
 .footer .info {
   float: right;
 }
-/* line 480, ../sass/misc.scss */
+/* line 481, ../sass/misc.scss */
 .footer .info a {
   color: #FFF;
 }
 
-/* line 484, ../sass/misc.scss */
+/* line 485, ../sass/misc.scss */
 .clearer {
   clear: both;
 }
