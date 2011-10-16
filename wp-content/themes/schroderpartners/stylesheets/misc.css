@@ -249,194 +249,195 @@ body {
 }
 /* line 263, ../sass/misc.scss */
 .container .single-sp_contact table td ul.no-style {
+  margin-bottom: 5px;
   margin-left: 0;
   padding-left: 0;
 }
-/* line 267, ../sass/misc.scss */
+/* line 268, ../sass/misc.scss */
 .container .single-sp_contact table td ul.no-style li {
   list-style-image: none;
   margin-bottom: 5px;
   text-indent: 0;
 }
-/* line 274, ../sass/misc.scss */
+/* line 275, ../sass/misc.scss */
 .container .single-sp_contact table td.head {
   color: #003066;
   font-weight: bold;
   width: 109px;
   padding-right: 10px;
 }
-/* line 281, ../sass/misc.scss */
+/* line 282, ../sass/misc.scss */
 .container .single-sp_contact table td.period {
   width: 119px;
 }
-/* line 286, ../sass/misc.scss */
+/* line 287, ../sass/misc.scss */
 .container .single-sp_contact .header {
   background: none;
   margin-bottom: 15px;
   position: relative;
 }
-/* line 291, ../sass/misc.scss */
+/* line 292, ../sass/misc.scss */
 .container .single-sp_contact .header a {
   color: #44879c;
 }
-/* line 295, ../sass/misc.scss */
+/* line 296, ../sass/misc.scss */
 .container .single-sp_contact .header .contact-thumbnail {
   float: left;
   margin-bottom: 10px;
   margin-right: 20px;
 }
-/* line 301, ../sass/misc.scss */
+/* line 302, ../sass/misc.scss */
 .container .single-sp_contact .header .title {
   margin: 0;
 }
-/* line 303, ../sass/misc.scss */
+/* line 304, ../sass/misc.scss */
 .container .single-sp_contact .header .contact-info {
   position: relative;
   top: -1px;
 }
-/* line 307, ../sass/misc.scss */
+/* line 308, ../sass/misc.scss */
 .container .single-sp_contact .header .contact-info li {
   margin-bottom: 1px;
 }
-/* line 309, ../sass/misc.scss */
+/* line 310, ../sass/misc.scss */
 .container .single-sp_contact .header .contact-info table td {
   border: none;
   padding: 0;
 }
-/* line 313, ../sass/misc.scss */
+/* line 314, ../sass/misc.scss */
 .container .single-sp_contact .header .contact-info table td.number {
   padding-left: 20px;
 }
 
-/* line 323, ../sass/misc.scss */
+/* line 324, ../sass/misc.scss */
 .newsletter .wpcf7-list-item {
   display: block;
   float: left;
   width: 550px;
 }
-/* line 329, ../sass/misc.scss */
+/* line 330, ../sass/misc.scss */
 .newsletter .wpcf7-list-item-label {
   float: left;
   width: 200px;
 }
-/* line 334, ../sass/misc.scss */
+/* line 335, ../sass/misc.scss */
 .newsletter .text-field-label {
   float: left;
   display: block;
   padding-left: 5px;
   width: 200px;
 }
-/* line 341, ../sass/misc.scss */
+/* line 342, ../sass/misc.scss */
 .newsletter input[type=text] {
   float: left;
 }
-/* line 345, ../sass/misc.scss */
+/* line 346, ../sass/misc.scss */
 .newsletter input[type=submit] {
   margin-left: 207px;
 }
 
-/* line 350, ../sass/misc.scss */
+/* line 351, ../sass/misc.scss */
 #frontpage {
   margin-top: 30px;
   float: left;
 }
-/* line 354, ../sass/misc.scss */
+/* line 355, ../sass/misc.scss */
 #frontpage .headline {
   color: #44879c;
   font-size: 1.1em;
   font-weight: bold;
   margin-bottom: 20px;
 }
-/* line 361, ../sass/misc.scss */
+/* line 362, ../sass/misc.scss */
 #frontpage .sidebar-left {
   float: left;
   margin-right: 30px;
   padding: 0 13px;
   width: 200px;
 }
-/* line 367, ../sass/misc.scss */
+/* line 368, ../sass/misc.scss */
 #frontpage .sidebar-left ul {
   margin-bottom: 20px;
 }
-/* line 370, ../sass/misc.scss */
+/* line 371, ../sass/misc.scss */
 #frontpage .sidebar-left ul li {
   margin-bottom: 10px;
 }
-/* line 373, ../sass/misc.scss */
+/* line 374, ../sass/misc.scss */
 #frontpage .sidebar-left ul li .date {
   border-bottom: 1px solid #EEE;
   font-weight: bold;
 }
-/* line 378, ../sass/misc.scss */
+/* line 379, ../sass/misc.scss */
 #frontpage .sidebar-left ul li .title a {
   color: #555;
   text-decoration: none;
 }
-/* line 385, ../sass/misc.scss */
+/* line 386, ../sass/misc.scss */
 #frontpage .sidebar-left .more-news {
   color: #44879c;
   font-size: 1em;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 391, ../sass/misc.scss */
+/* line 392, ../sass/misc.scss */
 #frontpage .sidebar-left .more-news:hover {
   color: #30606f;
 }
-/* line 397, ../sass/misc.scss */
+/* line 398, ../sass/misc.scss */
 #frontpage .content {
   float: left;
   width: 400px;
 }
-/* line 403, ../sass/misc.scss */
+/* line 404, ../sass/misc.scss */
 #frontpage .sidebar-right {
   float: right;
   text-align: right;
   width: 200px;
 }
-/* line 408, ../sass/misc.scss */
+/* line 409, ../sass/misc.scss */
 #frontpage .sidebar-right ul li {
   margin-bottom: 0px;
 }
-/* line 411, ../sass/misc.scss */
+/* line 412, ../sass/misc.scss */
 #frontpage .sidebar-right ul li a {
   color: #44879c;
   font-size: 1.1em;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 417, ../sass/misc.scss */
+/* line 418, ../sass/misc.scss */
 #frontpage .sidebar-right ul li a:hover {
   color: #30606f;
 }
-/* line 424, ../sass/misc.scss */
+/* line 425, ../sass/misc.scss */
 #frontpage .bottom-menu {
   margin: 45px 0 0 13px;
 }
-/* line 427, ../sass/misc.scss */
+/* line 428, ../sass/misc.scss */
 #frontpage .bottom-menu .headline {
   margin-bottom: 10px;
 }
-/* line 431, ../sass/misc.scss */
+/* line 432, ../sass/misc.scss */
 #frontpage .bottom-menu .certified-adviser {
   float: right;
 }
-/* line 434, ../sass/misc.scss */
+/* line 435, ../sass/misc.scss */
 #frontpage .bottom-menu .certified-adviser .headline {
   text-align: right;
 }
-/* line 439, ../sass/misc.scss */
+/* line 440, ../sass/misc.scss */
 #frontpage .bottom-menu .footer-navigation {
   margin: 0;
 }
-/* line 442, ../sass/misc.scss */
+/* line 443, ../sass/misc.scss */
 #frontpage .bottom-menu .footer-navigation li {
   line-height: 1em;
   padding: 0 0 0 15px;
   width: 110px;
 }
 
-/* line 451, ../sass/misc.scss */
+/* line 452, ../sass/misc.scss */
 .footer {
   background-color: #005793;
   color: #FFF;
@@ -445,20 +446,20 @@ body {
   padding: 10px;
   width: 840px;
 }
-/* line 459, ../sass/misc.scss */
+/* line 460, ../sass/misc.scss */
 .footer .copyright {
   float: left;
 }
-/* line 463, ../sass/misc.scss */
+/* line 464, ../sass/misc.scss */
 .footer .info {
   float: right;
 }
-/* line 466, ../sass/misc.scss */
+/* line 467, ../sass/misc.scss */
 .footer .info a {
   color: #FFF;
 }
 
-/* line 470, ../sass/misc.scss */
+/* line 471, ../sass/misc.scss */
 .clearer {
   clear: both;
 }
