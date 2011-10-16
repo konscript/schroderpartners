@@ -202,7 +202,7 @@ body {
 /* line 210, ../sass/misc.scss */
 .container .page .entry .alignleft {
   float: left;
-  margin: 0 0 10px 10px;
+  margin: 0 10px 10px 0;
 }
 /* line 217, ../sass/misc.scss */
 .container .post {
