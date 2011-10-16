@@ -26,7 +26,10 @@
           $career_info = $career_mb->the_meta();
           
           global $general_mb;
-          $general_info = $general_mb->the_meta();                
+          $general_info = $general_mb->the_meta();
+          
+          global $other_meta_mb;
+          $other_meta = $other_meta_mb->the_meta();
         ?>                
 
         <div class="post single-sp_contact">
@@ -38,16 +41,20 @@
               <li><p class="title"><?php the_title(); ?></p></li>
               <li><?php echo $general_info['position']; ?></li>
               <li><a href="mailto:<?php echo $contact_info['email']; ?>"><?php echo $contact_info['email']; ?></a></li>
-              <li>
-                <table border="0">                      
-                  <?php foreach($contact_info['phone_numbers'] as $key => $phone): ?>
-                    <tr>
-                      <td><?php echo $phone['phone_type']; ?></td>
-                      <td class="number"><?php echo $phone['phone_number']; ?></td>
-                    </tr>
-                  <?php endforeach; ?>
-                </table>
-              </li>
+              
+              <?php if($contact_info['phone_numbers']): ?>
+                <li>
+                  <table border="0">                      
+                    <?php foreach($contact_info['phone_numbers'] as $key => $phone): ?>
+                      <tr>
+                        <td><?php echo $phone['phone_type']; ?></td>
+                        <td class="number"><?php echo $phone['phone_number']; ?></td>
+                      </tr>
+                    <?php endforeach; ?>
+                  </table>
+                </li>
+              <?php endif; ?>
+              
               <li><?php echo $contact_info['address_street']; ?></li>
               <li><?php echo $contact_info['address_zipcode']; ?></li>
             </ul>
@@ -56,44 +63,91 @@
           <div class="clearer"></div>
           <div class="entry">
             <table>
-              <tr>
-                <td class="head">Født</td>
-                <td><?php echo $general_info['born']; ?></td>
-                </td>
-              </tr>
-              <tr>
-                <td class="head">Teoretisk uddannelse</td>
-                <td><?php echo nl2br($general_info['education']); ?></td>
-                </td>
-              </tr>
-              <tr>
-                <td class="head">Arbejdsområder</td>
-                <td><?php echo $general_info['work_areas']; ?></td>
-                </td>
-              </tr>
               
-              <tr>
-                <td class="head">Karriereforløb</td>
-              </tr>
+              <?php if($general_info['born']): ?>
+                <tr>
+                  <td class="head">Født</td>
+                  <td><?php echo $general_info['born']; ?></td>
+                  </td>
+                </tr>
+              <?php endif; ?>
               
-              <?php foreach($career_info['career'] as $key => $career): ?>
-              <tr>
-                <td class="period"><?php echo $career['period']; ?></td>
-                <td><?php echo $career['description']; ?></td>
-                </td>
-              </tr>
-              <?php endforeach; ?>
+              <?php if($general_info['education']): ?>
+                <tr>
+                  <td class="head">Teoretisk uddannelse</td>
+                  <td><?php echo nl2br($general_info['education']); ?></td>
+                  </td>
+                </tr>
+              <?php endif; ?>
               
-              <tr>
-                <td class="head">Aktuelle tillidsposter</td>
-                <td>
-                  <ul class="no-style">
-                    <?php foreach($career_info['position_of_trust'] as $key => $pot): ?>
-                      <li><?php echo $pot['position']; ?></li>
-                    <?php endforeach; ?>
-                  </ul>
-                </td>
-              </tr>
+              <?php if($general_info['work_areas']): ?>
+                <tr>
+                  <td class="head">Arbejdsområder</td>
+                  <td><?php echo $general_info['work_areas']; ?></td>
+                  </td>
+                </tr>
+              <?php endif; ?>
+              
+              <?php if($career_info['career']): ?>
+                <tr>
+                  <td class="head">Karriereforløb</td>
+                </tr>
+                
+                <?php foreach($career_info['career'] as $key => $career): ?>
+                  <tr>
+                    <td class="period"><?php echo $career['period']; ?></td>
+                    <td><?php echo $career['description']; ?></td>
+                    </td>
+                  </tr>
+                <?php endforeach; ?>
+              <?php endif; ?>
+              
+              <?php if($career_info['position_of_trust']): ?>
+                <tr>
+                  <td class="head">Aktuelle tillidsposter</td>
+                  <td>
+                    <ul class="no-style">
+                      <?php foreach($career_info['position_of_trust'] as $key => $pot): ?>
+                        <li><?php echo $pot['position']; ?></li>
+                      <?php endforeach; ?>
+                    </ul>
+                  </td>
+                </tr>
+              <?php endif; ?>
+              
+              <?php if($other_meta['additional']):?>
+                <tr>
+                  <td class="head">Andet</td>
+                  <td><?php echo $other_meta['additional']; ?></td>
+                  </td>
+                </tr>
+              <?php endif; ?>
+              
+              <?php if($other_meta['publication']): ?>
+                <tr>
+                  <td class="head">Publikationer</td>
+                  <td>
+                    <ul class="no-style">
+                      <?php foreach($other_meta['publication'] as $key => $publication): ?>
+                        <li><?php echo $publication['publication_info']; ?></li>
+                      <?php endforeach; ?>
+                    </ul>
+                  </td>
+                </tr>
+              <?php endif; ?>
+              
+              <?php if($other_meta['previous_job']): ?>
+                <tr>
+                  <td class="head">Tidligere hverv</td>
+                  <td>
+                    <ul class="no-style">
+                      <?php foreach($other_meta['previous_job'] as $key => $prev_job): ?>
+                        <li><?php echo $prev_job['job']; ?></li>
+                      <?php endforeach; ?>
+                    </ul>
+                  </td>
+                </tr>
+              <?php endif; ?>
               
             </table>
           </div>

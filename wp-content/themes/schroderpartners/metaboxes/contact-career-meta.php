@@ -47,7 +47,7 @@
           <input type="text" name="<?php $mb->the_name(); ?>" value="<?php $mb->the_value(); ?>" />
         </td>
         <td>
-          <a href="#" class="dodelete button">Remove Position</a>
+          <a href="#" class="dodelete button">Remove</a>
         </td>
 	    </tr>
 	  </table>
