@@ -248,183 +248,192 @@ body {
   padding: 0 0 10px 0;
 }
 /* line 263, ../sass/misc.scss */
+.container .single-sp_contact table td ul.no-style {
+  padding-left: 0;
+}
+/* line 266, ../sass/misc.scss */
+.container .single-sp_contact table td ul.no-style li {
+  list-style-image: none;
+  margin-bottom: 5px;
+}
+/* line 272, ../sass/misc.scss */
 .container .single-sp_contact table td.head {
   color: #003066;
   font-weight: bold;
   width: 109px;
   padding-right: 10px;
 }
-/* line 270, ../sass/misc.scss */
+/* line 279, ../sass/misc.scss */
 .container .single-sp_contact table td.period {
   width: 119px;
 }
-/* line 275, ../sass/misc.scss */
+/* line 284, ../sass/misc.scss */
 .container .single-sp_contact .header {
   background: none;
   margin-bottom: 15px;
   position: relative;
 }
-/* line 280, ../sass/misc.scss */
+/* line 289, ../sass/misc.scss */
 .container .single-sp_contact .header a {
   color: #44879c;
 }
-/* line 284, ../sass/misc.scss */
+/* line 293, ../sass/misc.scss */
 .container .single-sp_contact .header .contact-thumbnail {
   float: left;
   margin-right: 20px;
 }
-/* line 289, ../sass/misc.scss */
+/* line 298, ../sass/misc.scss */
 .container .single-sp_contact .header .title {
   margin: 0;
 }
-/* line 291, ../sass/misc.scss */
+/* line 300, ../sass/misc.scss */
 .container .single-sp_contact .header .contact-info {
   position: relative;
   top: -1px;
 }
-/* line 295, ../sass/misc.scss */
+/* line 304, ../sass/misc.scss */
 .container .single-sp_contact .header .contact-info li {
   margin-bottom: 1px;
 }
-/* line 297, ../sass/misc.scss */
+/* line 306, ../sass/misc.scss */
 .container .single-sp_contact .header .contact-info table td {
   border: none;
   padding: 0;
 }
-/* line 301, ../sass/misc.scss */
+/* line 310, ../sass/misc.scss */
 .container .single-sp_contact .header .contact-info table td.number {
   padding-left: 20px;
 }
 
-/* line 311, ../sass/misc.scss */
+/* line 320, ../sass/misc.scss */
 .newsletter .wpcf7-list-item {
   display: block;
   float: left;
   width: 550px;
 }
-/* line 317, ../sass/misc.scss */
+/* line 326, ../sass/misc.scss */
 .newsletter .wpcf7-list-item-label {
   float: left;
   width: 200px;
 }
-/* line 322, ../sass/misc.scss */
+/* line 331, ../sass/misc.scss */
 .newsletter .text-field-label {
   float: left;
   display: block;
   padding-left: 5px;
   width: 200px;
 }
-/* line 329, ../sass/misc.scss */
+/* line 338, ../sass/misc.scss */
 .newsletter input[type=text] {
   float: left;
 }
-/* line 333, ../sass/misc.scss */
+/* line 342, ../sass/misc.scss */
 .newsletter input[type=submit] {
   margin-left: 207px;
 }
 
-/* line 338, ../sass/misc.scss */
+/* line 347, ../sass/misc.scss */
 #frontpage {
   margin-top: 30px;
   float: left;
 }
-/* line 342, ../sass/misc.scss */
+/* line 351, ../sass/misc.scss */
 #frontpage .headline {
   color: #44879c;
   font-size: 1.1em;
   font-weight: bold;
   margin-bottom: 20px;
 }
-/* line 349, ../sass/misc.scss */
+/* line 358, ../sass/misc.scss */
 #frontpage .sidebar-left {
   float: left;
   margin-right: 30px;
   padding: 0 13px;
   width: 200px;
 }
-/* line 355, ../sass/misc.scss */
+/* line 364, ../sass/misc.scss */
 #frontpage .sidebar-left ul {
   margin-bottom: 20px;
 }
-/* line 358, ../sass/misc.scss */
+/* line 367, ../sass/misc.scss */
 #frontpage .sidebar-left ul li {
   margin-bottom: 10px;
 }
-/* line 361, ../sass/misc.scss */
+/* line 370, ../sass/misc.scss */
 #frontpage .sidebar-left ul li .date {
   border-bottom: 1px solid #EEE;
   font-weight: bold;
 }
-/* line 366, ../sass/misc.scss */
+/* line 375, ../sass/misc.scss */
 #frontpage .sidebar-left ul li .title a {
   color: #555;
   text-decoration: none;
 }
-/* line 373, ../sass/misc.scss */
+/* line 382, ../sass/misc.scss */
 #frontpage .sidebar-left .more-news {
   color: #44879c;
   font-size: 1em;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 379, ../sass/misc.scss */
+/* line 388, ../sass/misc.scss */
 #frontpage .sidebar-left .more-news:hover {
   color: #30606f;
 }
-/* line 385, ../sass/misc.scss */
+/* line 394, ../sass/misc.scss */
 #frontpage .content {
   float: left;
   width: 400px;
 }
-/* line 391, ../sass/misc.scss */
+/* line 400, ../sass/misc.scss */
 #frontpage .sidebar-right {
   float: right;
   text-align: right;
   width: 200px;
 }
-/* line 396, ../sass/misc.scss */
+/* line 405, ../sass/misc.scss */
 #frontpage .sidebar-right ul li {
   margin-bottom: 0px;
 }
-/* line 399, ../sass/misc.scss */
+/* line 408, ../sass/misc.scss */
 #frontpage .sidebar-right ul li a {
   color: #44879c;
   font-size: 1.1em;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 405, ../sass/misc.scss */
+/* line 414, ../sass/misc.scss */
 #frontpage .sidebar-right ul li a:hover {
   color: #30606f;
 }
-/* line 412, ../sass/misc.scss */
+/* line 421, ../sass/misc.scss */
 #frontpage .bottom-menu {
   margin: 45px 0 0 13px;
 }
-/* line 415, ../sass/misc.scss */
+/* line 424, ../sass/misc.scss */
 #frontpage .bottom-menu .headline {
   margin-bottom: 10px;
 }
-/* line 419, ../sass/misc.scss */
+/* line 428, ../sass/misc.scss */
 #frontpage .bottom-menu .certified-adviser {
   float: right;
 }
-/* line 422, ../sass/misc.scss */
+/* line 431, ../sass/misc.scss */
 #frontpage .bottom-menu .certified-adviser .headline {
   text-align: right;
 }
-/* line 427, ../sass/misc.scss */
+/* line 436, ../sass/misc.scss */
 #frontpage .bottom-menu .footer-navigation {
   margin: 0;
 }
-/* line 430, ../sass/misc.scss */
+/* line 439, ../sass/misc.scss */
 #frontpage .bottom-menu .footer-navigation li {
   line-height: 1em;
   padding: 0 0 0 15px;
   width: 110px;
 }
 
-/* line 439, ../sass/misc.scss */
+/* line 448, ../sass/misc.scss */
 .footer {
   background-color: #005793;
   color: #FFF;
@@ -433,20 +442,20 @@ body {
   padding: 10px;
   width: 840px;
 }
-/* line 447, ../sass/misc.scss */
+/* line 456, ../sass/misc.scss */
 .footer .copyright {
   float: left;
 }
-/* line 451, ../sass/misc.scss */
+/* line 460, ../sass/misc.scss */
 .footer .info {
   float: right;
 }
-/* line 454, ../sass/misc.scss */
+/* line 463, ../sass/misc.scss */
 .footer .info a {
   color: #FFF;
 }
 
-/* line 458, ../sass/misc.scss */
+/* line 467, ../sass/misc.scss */
 .clearer {
   clear: both;
 }
