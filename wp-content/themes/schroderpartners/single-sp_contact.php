@@ -60,7 +60,7 @@
             </ul>
           </div>
           
-          <div class="clearer"></div>
+          <!-- <div class="clearer"></div> -->
           <div class="entry">
             <table>
               
