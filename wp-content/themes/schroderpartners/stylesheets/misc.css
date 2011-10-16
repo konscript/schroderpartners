@@ -249,14 +249,14 @@ body {
 }
 /* line 263, ../sass/misc.scss */
 .container .single-sp_contact table td ul.no-style {
+  margin-left: 0;
   padding-left: 0;
 }
-/* line 266, ../sass/misc.scss */
+/* line 267, ../sass/misc.scss */
 .container .single-sp_contact table td ul.no-style li {
   list-style-image: none;
   margin-bottom: 5px;
   text-indent: 0;
-  margin-left: 0;
 }
 /* line 274, ../sass/misc.scss */
 .container .single-sp_contact table td.head {
