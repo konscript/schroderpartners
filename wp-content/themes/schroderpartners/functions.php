@@ -9,9 +9,6 @@ if (is_admin()) {
   wp_enqueue_script('jquery-textarea-autoresize', get_stylesheet_directory_uri() . '/javascript/jquery.autoresize.js');
 }
 
-
-
-
 /**
 #########################################################
 # Include the necessary files for the theme to function #
@@ -51,7 +48,8 @@ register_nav_menus(array(
 #####################
 **/
 register_sidebar(array(
-	'name'				  => 'Right Sidebar',
+	'name'				  => 'Footer Bar',
+	'id'            => 'footer-bar',
 	'before_widget'	=> '',
 	'after_widget'	=> '',
 	'before_title'	=> '',
@@ -72,5 +70,6 @@ include_once 'post_types/post_type-sp_contact.php';
 #####################
 **/
 include_once 'metaboxes/contact-spec.php';
+
 
 ?>
