@@ -1,9 +1,6 @@
       </div>
       
-      <div class="footer">
-        <p class="copyright">&copy; 2007 www.schroderpartners.dk</p>
-        <p class="info">Info | Info</p>
-      </div>
+      <?php dynamic_sidebar('footer-bar'); ?>
       
       <div class="clearer"></div>
       

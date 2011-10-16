@@ -437,8 +437,12 @@ body {
 .footer .info {
   float: right;
 }
+/* line 452, ../sass/misc.scss */
+.footer .info a {
+  color: #FFF;
+}
 
-/* line 454, ../sass/misc.scss */
+/* line 456, ../sass/misc.scss */
 .clearer {
   clear: both;
 }
