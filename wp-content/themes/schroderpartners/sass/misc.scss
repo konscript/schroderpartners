@@ -207,6 +207,14 @@ body {
 				}
 			}
 			
+			ol {
+				list-style-type: decimal;
+				
+				li {
+					margin-bottom: 10px;
+				}
+			}
+			
 			.alignleft { 
 				float: left; 
 				margin: 0 10px 10px 0;
