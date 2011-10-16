@@ -26,7 +26,7 @@
           $career_info = $career_mb->the_meta();
           
           global $general_mb;
-          $general_info = $general_mb->the_meta();                  
+          $general_info = $general_mb->the_meta();                
         ?>                
 
         <div class="post single-sp_contact">
@@ -71,6 +71,7 @@
                 <td><?php echo $general_info['work_areas']; ?></td>
                 </td>
               </tr>
+              
               <tr>
                 <td class="head">Karriereforløb</td>
               </tr>
@@ -82,11 +83,18 @@
                 </td>
               </tr>
               <?php endforeach; ?>
+              
               <tr>
                 <td class="head">Aktuelle tillidsposter</td>
-                <td><?php echo $general_info['work_areas']; ?></td>
+                <td>
+                  <ul class="no-style">
+                    <?php foreach($career_info['position_of_trust'] as $key => $pot): ?>
+                      <li><?php echo $pot['position']; ?></li>
+                    <?php endforeach; ?>
+                  </ul>
                 </td>
               </tr>
+              
             </table>
           </div>
           

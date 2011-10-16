@@ -26,9 +26,37 @@
         </td>
 	    </tr>
 	  </table>
+	  
 
 	<?php $mb->the_group_close(); ?>
 	<?php endwhile; ?>
- 
+	
 	<p style="margin-bottom:15px; padding-top:5px;"><a href="#" class="docopy-career button">Add Period</a></p>
+  
+	
+	<h4>Postitions of trust</h4>
+	
+	<?php while($mb->have_fields_and_multi('position_of_trust')): ?>
+	<?php $mb->the_group_open(); ?>
+	
+	  <table border="0">
+	    <tr>
+        <td class="head">Position</td>
+        <td>
+          <?php $mb->the_field('position'); ?>
+          <input type="text" name="<?php $mb->the_name(); ?>" value="<?php $mb->the_value(); ?>" />
+        </td>
+        <td>
+          <a href="#" class="dodelete button">Remove Position</a>
+        </td>
+	    </tr>
+	  </table>
+	  
+	<?php $mb->the_group_close(); ?>
+	<?php endwhile; ?>
+	
+	<p style="margin-bottom:15px; padding-top:5px;"><a href="#" class="docopy-position_of_trust button">Add Period</a></p>
+  
+	
+ 
 </div>
