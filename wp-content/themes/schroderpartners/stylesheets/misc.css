@@ -477,6 +477,35 @@ body {
 }
 
 /* line 488, ../sass/misc.scss */
+.wp-pagenavi {
+  clear: both;
+  text-align: center;
+}
+/* line 492, ../sass/misc.scss */
+.wp-pagenavi a, .wp-pagenavi span {
+  color: #555;
+  margin: 2px;
+  padding: 5px 5px 5px 7px;
+  text-decoration: none;
+}
+/* line 499, ../sass/misc.scss */
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+  border-color: #000;
+  color: #44879c;
+}
+/* line 504, ../sass/misc.scss */
+.wp-pagenavi span.current {
+  background: #CCC;
+  font-weight: bold;
+}
+/* line 509, ../sass/misc.scss */
+.wp-pagenavi span.pages {
+  background: none;
+  border: none;
+  display: block;
+}
+
+/* line 516, ../sass/misc.scss */
 .clearer {
   clear: both;
 }
