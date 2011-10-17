@@ -40,6 +40,7 @@ register_nav_menus(array(
   'top_menu'      => 'Top Menu',
   'footer_menu'   => 'Footer Menu',
   'profile_menu'  => 'Profil Menu',
+  'news_menu'     => 'Nyheder Menu'
 ));
 
 /**
