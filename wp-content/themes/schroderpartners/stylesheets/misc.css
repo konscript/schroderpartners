@@ -340,7 +340,7 @@ body {
 .container .contact-person .contact-thumbnail {
   float: left;
   margin-bottom: 10px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 /* line 356, ../sass/misc.scss */
 .container .contact-person .title {
