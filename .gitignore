@@ -24,3 +24,6 @@ wp-content/themes/*
 !wp-content/themes/childof-wm/
 !wp-content/themes/schroderpartners/
 !wp-content/wpalchemy/
+
+!wp-content/plugins/contact-form-7/
+!wp-content/plugins/wp-pagenavi/

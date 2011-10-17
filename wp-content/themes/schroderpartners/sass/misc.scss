@@ -485,6 +485,34 @@ body {
 	}
 }
 
+.wp-pagenavi {
+	clear: both;
+	text-align: center;
+	
+	a, span {
+		color: #555;
+		margin: 2px;
+		padding: 5px 5px 5px 7px;
+		text-decoration: none;
+	}
+	
+	a:hover, span.current { 
+		border-color: #000; 
+		color: $link-blue;
+	}
+	
+	span.current { 
+		background: #CCC;
+		font-weight: bold; 
+	}
+	
+	span.pages { 
+		background: none;
+		border: none;
+		display: block;
+	}
+}
+
 .clearer {
 	clear: both;
 }

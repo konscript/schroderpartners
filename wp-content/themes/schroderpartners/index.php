@@ -36,6 +36,7 @@
         </div>
       <?php endwhile; ?>
       <?php endif; ?>
+      <?php wp_pagenavi(); ?>
       </div>
     </td>
   </tr>
