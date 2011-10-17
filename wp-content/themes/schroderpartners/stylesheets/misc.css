@@ -324,136 +324,177 @@ body {
 .container .single-sp_contact .header .contact-info table td.number {
   padding-left: 20px;
 }
+/* line 338, ../sass/misc.scss */
+.container .contact-person {
+  width: 270px;
+  float: left;
+  background: none;
+  margin-bottom: 15px;
+  position: relative;
+}
+/* line 346, ../sass/misc.scss */
+.container .contact-person a {
+  color: #44879c;
+}
+/* line 350, ../sass/misc.scss */
+.container .contact-person .contact-thumbnail {
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+/* line 356, ../sass/misc.scss */
+.container .contact-person .title {
+  margin: 0;
+}
+/* line 358, ../sass/misc.scss */
+.container .contact-person .contact-info {
+  position: relative;
+  top: -1px;
+  list-style-image: none;
+}
+/* line 363, ../sass/misc.scss */
+.container .contact-person .contact-info li {
+  margin-bottom: 1px;
+}
+/* line 367, ../sass/misc.scss */
+.container .contact-person .contact-info table td {
+  border: none;
+  padding: 0;
+}
+/* line 371, ../sass/misc.scss */
+.container .contact-person .contact-info table td.number {
+  padding-left: 20px;
+}
 
-/* line 340, ../sass/misc.scss */
+/* line 380, ../sass/misc.scss */
 .newsletter .wpcf7-list-item {
   display: block;
   float: left;
   width: 550px;
 }
-/* line 346, ../sass/misc.scss */
+/* line 386, ../sass/misc.scss */
 .newsletter .wpcf7-list-item-label {
   float: left;
   width: 200px;
 }
-/* line 351, ../sass/misc.scss */
+/* line 391, ../sass/misc.scss */
 .newsletter .text-field-label {
   float: left;
   display: block;
   padding-left: 5px;
   width: 200px;
 }
-/* line 358, ../sass/misc.scss */
+/* line 398, ../sass/misc.scss */
 .newsletter input[type=text] {
   float: left;
 }
-/* line 362, ../sass/misc.scss */
+/* line 402, ../sass/misc.scss */
 .newsletter input[type=submit] {
   margin-left: 207px;
 }
 
-/* line 367, ../sass/misc.scss */
+/* line 407, ../sass/misc.scss */
 #frontpage {
   margin-top: 30px;
   float: left;
 }
-/* line 371, ../sass/misc.scss */
+/* line 411, ../sass/misc.scss */
 #frontpage .headline {
   color: #44879c;
   font-size: 1.1em;
   font-weight: bold;
   margin-bottom: 20px;
 }
-/* line 378, ../sass/misc.scss */
+/* line 418, ../sass/misc.scss */
 #frontpage .sidebar-left {
   float: left;
   margin-right: 30px;
   padding: 0 13px;
   width: 200px;
 }
-/* line 384, ../sass/misc.scss */
+/* line 424, ../sass/misc.scss */
 #frontpage .sidebar-left ul {
   margin-bottom: 20px;
 }
-/* line 387, ../sass/misc.scss */
+/* line 427, ../sass/misc.scss */
 #frontpage .sidebar-left ul li {
   margin-bottom: 10px;
 }
-/* line 390, ../sass/misc.scss */
+/* line 430, ../sass/misc.scss */
 #frontpage .sidebar-left ul li .date {
   border-bottom: 1px solid #EEE;
   font-weight: bold;
 }
-/* line 395, ../sass/misc.scss */
+/* line 435, ../sass/misc.scss */
 #frontpage .sidebar-left ul li .title a {
   color: #555;
   text-decoration: none;
 }
-/* line 402, ../sass/misc.scss */
+/* line 442, ../sass/misc.scss */
 #frontpage .sidebar-left .more-news {
   color: #44879c;
   font-size: 1em;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 408, ../sass/misc.scss */
+/* line 448, ../sass/misc.scss */
 #frontpage .sidebar-left .more-news:hover {
   color: #30606f;
 }
-/* line 414, ../sass/misc.scss */
+/* line 454, ../sass/misc.scss */
 #frontpage .content {
   float: left;
   width: 400px;
 }
-/* line 420, ../sass/misc.scss */
+/* line 460, ../sass/misc.scss */
 #frontpage .sidebar-right {
   float: right;
   text-align: right;
   width: 200px;
 }
-/* line 425, ../sass/misc.scss */
+/* line 465, ../sass/misc.scss */
 #frontpage .sidebar-right ul li {
   margin-bottom: 0px;
 }
-/* line 428, ../sass/misc.scss */
+/* line 468, ../sass/misc.scss */
 #frontpage .sidebar-right ul li a {
   color: #44879c;
   font-size: 1.1em;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 434, ../sass/misc.scss */
+/* line 474, ../sass/misc.scss */
 #frontpage .sidebar-right ul li a:hover {
   color: #30606f;
 }
-/* line 441, ../sass/misc.scss */
+/* line 481, ../sass/misc.scss */
 #frontpage .bottom-menu {
   margin: 45px 0 0 13px;
 }
-/* line 444, ../sass/misc.scss */
+/* line 484, ../sass/misc.scss */
 #frontpage .bottom-menu .headline {
   margin-bottom: 10px;
 }
-/* line 448, ../sass/misc.scss */
+/* line 488, ../sass/misc.scss */
 #frontpage .bottom-menu .certified-adviser {
   float: right;
 }
-/* line 451, ../sass/misc.scss */
+/* line 491, ../sass/misc.scss */
 #frontpage .bottom-menu .certified-adviser .headline {
   text-align: right;
 }
-/* line 456, ../sass/misc.scss */
+/* line 496, ../sass/misc.scss */
 #frontpage .bottom-menu .footer-navigation {
   margin: 0;
 }
-/* line 459, ../sass/misc.scss */
+/* line 499, ../sass/misc.scss */
 #frontpage .bottom-menu .footer-navigation li {
   line-height: 1em;
   padding: 0 0 0 15px;
   width: 110px;
 }
 
-/* line 468, ../sass/misc.scss */
+/* line 508, ../sass/misc.scss */
 .footer {
   background-color: #005793;
   color: #FFF;
@@ -462,49 +503,49 @@ body {
   padding: 10px;
   width: 840px;
 }
-/* line 476, ../sass/misc.scss */
+/* line 516, ../sass/misc.scss */
 .footer .copyright {
   float: left;
 }
-/* line 480, ../sass/misc.scss */
+/* line 520, ../sass/misc.scss */
 .footer .info {
   float: right;
 }
-/* line 483, ../sass/misc.scss */
+/* line 523, ../sass/misc.scss */
 .footer .info a {
   color: #FFF;
 }
 
-/* line 487, ../sass/misc.scss */
+/* line 527, ../sass/misc.scss */
 .wp-pagenavi {
   clear: both;
   text-align: center;
 }
-/* line 491, ../sass/misc.scss */
+/* line 531, ../sass/misc.scss */
 .wp-pagenavi a, .wp-pagenavi span {
   color: #555;
   margin: 2px;
   padding: 5px 5px 5px 7px;
   text-decoration: none;
 }
-/* line 498, ../sass/misc.scss */
+/* line 538, ../sass/misc.scss */
 .wp-pagenavi a:hover, .wp-pagenavi span.current {
   border-color: #000;
   color: #44879c;
 }
-/* line 503, ../sass/misc.scss */
+/* line 543, ../sass/misc.scss */
 .wp-pagenavi span.current {
   background: #EAEAEA;
   font-weight: bold;
 }
-/* line 508, ../sass/misc.scss */
+/* line 548, ../sass/misc.scss */
 .wp-pagenavi span.pages {
   background: none;
   border: none;
   display: block;
 }
 
-/* line 515, ../sass/misc.scss */
+/* line 555, ../sass/misc.scss */
 .clearer {
   clear: both;
 }

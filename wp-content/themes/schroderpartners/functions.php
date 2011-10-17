@@ -71,6 +71,22 @@ include_once 'post_types/post_type-sp_contact.php';
 #####################
 **/
 include_once 'metaboxes/contact-spec.php';
+include_once 'metaboxes/contact-persons-spec.php';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ?>
