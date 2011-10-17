@@ -334,6 +334,46 @@ body {
 			}
 		}
 	}
+	
+	.contact-person {
+		width: 270px;
+		float: left;
+		
+		background: none;
+		margin-bottom: 15px;
+		position: relative;
+		
+		a {
+			color: $link-blue;
+		}
+		
+		.contact-thumbnail { 
+			float: left; 
+			margin-bottom: 10px;
+			margin-right: 20px;
+		}
+		
+		.title { margin: 0;	}
+		
+		.contact-info {
+			position: relative;
+			top: -1px;
+			list-style-image: none;
+			
+			li { 
+				margin-bottom: 1px; 
+			}
+			
+			table td {
+				border: none;
+				padding: 0;
+				
+				&.number {
+					padding-left: 20px;
+				}
+			}
+		}	
+	}
 }
 
 .newsletter {
