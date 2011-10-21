@@ -6,7 +6,7 @@
       <?php
         // This should be changed so the menus can be changed dynamically
         wp_nav_menu(array(
-          'theme_location'  => 'profile_menu',
+          'theme_location'  => 'news_menu',
           'container'       => false,
           'menu_class'      => 'sidebar-menu'
         ));
