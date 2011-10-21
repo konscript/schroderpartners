@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
+    
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/reset.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/page-structure.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/misc.css" type="text/css" media="screen" />
