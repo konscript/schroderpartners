@@ -12,7 +12,14 @@
       <li>
         <a href="#contact-id-<?php echo $contact->ID; ?>">
           <?php echo get_the_post_thumbnail($contact->ID, 'contact-module-thumb', array('class' => 'active')); ?>
-          <img src="<?php echo $meta['grey_url']; ?>" width="58" height="70" class="inactive">          
+          <!-- <img src="<?php echo $meta['grey_url']; ?>" width="58" height="70" class="inactive">           -->
+          <?php 
+            // Get image in right size in a decent way using a custom function by Kristian Andersen
+            $img_url  = $meta['grey_url']; 
+            $img_id   = get_attachment_id_from_src($img_url);
+            $img      = wp_get_attachment_image_src($img_id, 'contact-module-thumb', false);
+          ?>
+          <img src="<?php echo $img[0] ?>" width="58" height="70" class="inactive"?>
         </a>
       </li>
     <?php endforeach; ?>
