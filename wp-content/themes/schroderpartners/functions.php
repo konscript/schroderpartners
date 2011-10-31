@@ -73,6 +73,19 @@ include_once 'post_types/post_type-sp_contact.php';
 include_once 'metaboxes/contact-spec.php';
 include_once 'metaboxes/contact-persons-spec.php';
 
+/**
+######################
+# Relavant functions #
+######################
+**/
+
+function get_attachment_id_from_src ($image_src) {
+	global $wpdb;
+	$query = "SELECT ID FROM {$wpdb->posts} WHERE guid='$image_src'";
+	$id = $wpdb->get_var($query);
+	return $id;
+}
+
 
 
 
