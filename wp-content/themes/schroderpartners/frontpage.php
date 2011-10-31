@@ -7,7 +7,7 @@ Template Name: Frontpage
 <?php get_header('frontpage'); ?>   
       
 <div class="sidebar-left">
-  <h2 class="headline">Seneste Nyheder</h2>
+  <h2 class="top-title">Seneste Nyheder</h2>
   <?php $latest_posts = get_posts(array('numberposts' => 3)); ?>
   <?php if($latest_posts): ?>
     <ul>
@@ -32,7 +32,7 @@ Template Name: Frontpage
   <?php if(have_posts()) : while(have_posts()) : the_post() ?>
     <div class="page">
     
-      <h2 class="headline"><?php the_title(); ?></h2>
+      <h2 class="top-title"><?php the_title(); ?></h2>
       
       <?php the_post_thumbnail('post-thumbnail', array('class' => 'page-thumbnail')); ?>
       

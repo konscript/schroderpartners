@@ -13,9 +13,9 @@ $contacts = get_posts(array('numberposts' => -1, 'post_type' => 'sp_contact'));
 		<?php $mb->the_field('person'); ?>
 		<select name="<?php $mb->the_name(); ?>">
 		  
-		  <?php foreach($contacts as $key => $contact): ?>
+      <?php foreach($contacts as $key => $contact): ?>
         <option value="<?php echo $contact->ID; ?>"<?php $mb->the_select_state($contact->ID); ?>><?php echo $contact->post_title; ?></option>
-		  <?php endforeach; ?>
+      <?php endforeach; ?>
 
 		</select>
 		<a href="#" class="dodelete">Remove</a>
