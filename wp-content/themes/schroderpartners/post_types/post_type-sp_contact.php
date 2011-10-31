@@ -25,7 +25,8 @@ function register_sp_contact() {
    'query_var'           => true,
    'menu_position'       => 5,
    //'menu_icon'           => get_stylesheet_directory_uri() . '/images/icon_event.gif',
-   //'rewrite'       => array('slug' => 'event', 'with_front' => false),
+   '_builtin'            => false,
+   'rewrite'             => array('slug' => 'kontakter', 'with_front' => false),
    'capability_type'     => 'post',
    'hierarchical'        => false,
    'supports'            => array('title', 'thumbnail')
