@@ -1,5 +1,5 @@
 <?php
-  $contacts = get_posts(array('numberposts' => -1, 'post_type' => 'sp_contact'));
+  $contacts = get_posts(array('numberposts' => -1, 'post_type' => 'sp_contact', 'orderby'=>'menu_order', 'order'=>'ASC'));
 ?>
 
 <div id="contact-module">
