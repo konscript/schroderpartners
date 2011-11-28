@@ -1,9 +1,12 @@
-      </div>
+			</div>
+
+			<div class="footer">
+				<?php dynamic_sidebar('footer-left'); ?>
+				<?php dynamic_sidebar('footer-right'); ?>
+			</div>
       
-      <?php dynamic_sidebar('footer-bar'); ?>
+			<div class="clearer"></div>
       
-      <div class="clearer"></div>
-      
-    </div>
-  </body>
+		</div>
+	</body>
 </html>

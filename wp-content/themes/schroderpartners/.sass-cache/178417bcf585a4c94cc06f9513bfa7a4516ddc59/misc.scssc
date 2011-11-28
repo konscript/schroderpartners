@@ -1,7 +1,7 @@
 3.1.2 (Brainy Betty)
-cc7f15715641b47a9ed889b8025c511a65438340
+75414b6f60d9c5e0199fc122f0a070060c130451
 o:Sass::Tree::RootNode
-:@template"í$link-blue: #44879C;
+:@template"ì$link-blue: #44879C;
 
 
 html, body {
@@ -490,7 +490,7 @@ body {
 	}
 	
 	.bottom-menu {
-		margin: 45px 0 0 13px;
+		margin: 0px 0 0 13px;
 		
 		.headline {
 			margin-bottom: 10px;
@@ -1068,7 +1068,7 @@ hover;$;A;@9;iâ;B0;iâ;@;	T;
 color;!;";o;4
 ;5o;*;+"1.4;f1.3999999999999999 ff;iã;,@T;{ ;-[ ;iã;6;C;8o;=	;"link-blue;iã;@K;>"link_blue;@K;iã;@;
 [ ;&i ;&i ;&i ;&i ;&i o;;[".bottom-menu;o;;" ;ié;[o;;[o;;@U;ié;[o;.;["bottom-menu;@U;ié;ié;@;	T;
-[	o; ;["margin;!;";o;#;$;%;"45px 0 0 13px;iê;@;
+[	o; ;["margin;!;";o;#;$;%;"0px 0 0 13px;iê;@;
 [ ;&i o;;[".headline;o;;" ;iì;[o;;[o;;@i;iì;[o;.;["headline;@i;iì;iì;@;	T;
 [o; ;["margin-bottom;!;";o;#;$;%;"	10px;ií;@;
 [ ;&i ;&i o;;[".certified-adviser;o;;" ;ið;[o;;[o;;@};ið;[o;.;["certified-adviser;@};ið;ið;@;	T;

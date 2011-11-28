@@ -49,10 +49,19 @@ register_nav_menus(array(
 #####################
 **/
 register_sidebar(array(
-	'name'				  => 'Footer Bar',
-	'id'            => 'footer-bar',
-	'before_widget'	=> '',
-	'after_widget'	=> '',
+	'name'				  => 'Footer: Left',
+	'id'            => 'footer-left',
+	'before_widget'	=> '<div class="copyright">',
+	'after_widget'	=> '</div>',
+	'before_title'	=> '',
+	'after´_title'	=> '',
+));
+
+register_sidebar(array(
+	'name'				  => 'Footer: Right',
+	'id'            => 'footer-right',
+	'before_widget'	=> '<div class="info">',
+	'after_widget'	=> '</div>',
 	'before_title'	=> '',
 	'after´_title'	=> '',
 ));
