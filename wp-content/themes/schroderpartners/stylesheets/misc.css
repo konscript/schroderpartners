@@ -523,37 +523,49 @@ body {
 .footer .info a {
   color: #FFF;
 }
+/* line 534, ../sass/misc.scss */
+.footer #english-link li a {
+  background: url("../images/english-medium.png") center center no-repeat;
+  display: block;
+  float: left;
+  margin-left: 20px;
+  width: 24px;
+}
+/* line 541, ../sass/misc.scss */
+.footer #english-link li a .invisible {
+  display: none;
+}
 
-/* line 535, ../sass/misc.scss */
+/* line 547, ../sass/misc.scss */
 .wp-pagenavi {
   clear: both;
   text-align: center;
 }
-/* line 539, ../sass/misc.scss */
+/* line 551, ../sass/misc.scss */
 .wp-pagenavi a, .wp-pagenavi span {
   color: #555;
   margin: 2px;
   padding: 5px 5px 5px 7px;
   text-decoration: none;
 }
-/* line 546, ../sass/misc.scss */
+/* line 558, ../sass/misc.scss */
 .wp-pagenavi a:hover, .wp-pagenavi span.current {
   border-color: #000;
   color: #44879c;
 }
-/* line 551, ../sass/misc.scss */
+/* line 563, ../sass/misc.scss */
 .wp-pagenavi span.current {
   background: #EAEAEA;
   font-weight: bold;
 }
-/* line 556, ../sass/misc.scss */
+/* line 568, ../sass/misc.scss */
 .wp-pagenavi span.pages {
   background: none;
   border: none;
   display: block;
 }
 
-/* line 563, ../sass/misc.scss */
+/* line 575, ../sass/misc.scss */
 .clearer {
   clear: both;
 }

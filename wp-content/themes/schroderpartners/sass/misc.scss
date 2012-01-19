@@ -530,6 +530,18 @@ body {
 		
 		a { color: #FFF; }
 	}
+	
+	#english-link li a {
+		background: url('../images/english-medium.png') center center no-repeat;
+		display: block;
+		float: left;
+		margin-left: 20px;
+		width: 24px;
+		
+		.invisible {
+			display: none;
+		}
+	}
 }
 
 .wp-pagenavi {
