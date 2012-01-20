@@ -7,7 +7,8 @@
 						'theme_location'	=> 'eng_link',
 						'menu_id'					=> 'english-link',
 						'link_before'			=> '&nbsp<span class="invisible">',
-						'link_after'			=> '</span>'
+						'link_after'			=> '</span>',
+						'fallback_cb'			=> function() { return null; }
 					));
 				?>
 				<?php dynamic_sidebar('footer-right'); ?>
