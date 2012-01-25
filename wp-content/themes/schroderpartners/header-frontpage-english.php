@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
     <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
     
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/reset.css" type="text/css" media="screen" />
@@ -50,13 +49,4 @@
         <?php include('contact-module-english.php'); ?> 
       </div>
       
-      <div class="container">
-        
-				<?php
-					wp_nav_menu(array(
-						'theme_location'  => 'english_menu',
-						'container'       => false,
-						'menu_class'      => 'top-navigation',
-					));
-				?>        
-				<div class="clearer"></div>
+      <div class="container" id="frontpage">

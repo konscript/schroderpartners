@@ -4,7 +4,7 @@ Template Name: Frontpage - English
 */
 ?>
 
-<?php get_header('frontpage'); ?>   
+<?php get_header('frontpage-english'); ?>   
       
 <div class="sidebar-left">
   <h2 class="top-title">Latest News</h2>

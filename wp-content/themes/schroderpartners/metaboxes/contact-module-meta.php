@@ -10,4 +10,10 @@
 	  <?php $mb->the_field('cm_text'); ?>
 		<textarea class="custom" name="<?php $mb->the_name(); ?>"><?php $mb->the_value(); ?></textarea>
 	</p>
+	
+	<label>Contact Module Text - English</label>
+	<p>
+	  <?php $mb->the_field('cm_text_eng'); ?>
+		<textarea class="custom" name="<?php $mb->the_name(); ?>"><?php $mb->the_value(); ?></textarea>
+	</p>
 </div>
