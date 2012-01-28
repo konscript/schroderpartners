@@ -46,6 +46,16 @@
         <a href="<?php bloginfo('url'); ?>" class="header-logo">
           <img src="<?php bloginfo('template_url'); ?>/images/header-logo.jpg" />
         </a>
+
+				<?php
+					wp_nav_menu(array(
+						'theme_location' 	=> 'language_picker',
+						'menu_id'					=> 'language-picker',
+						'container'				=> 'false'
+					));
+				?>
+				
+				<div class="clearer"></div>
         
         <?php include('contact-module.php'); ?> 
       </div>

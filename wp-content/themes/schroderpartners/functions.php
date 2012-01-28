@@ -37,12 +37,12 @@ add_image_size('contact-thumbnail',     096, 128, true);
 ##########################################
 **/
 register_nav_menus(array(
-  'top_menu'      => 'Top Menu',
-  'footer_menu'   => 'Footer Menu',
-  'profile_menu'  => 'Profil Menu',
-  'news_menu'     => 'Nyheder Menu',
-	'eng_link'			=> 'English Link',
-	'english_menu'	=> 'English Menu'
+  'top_menu'      	=> 'Top Menu',
+  'footer_menu'   	=> 'Footer Menu',
+  'profile_menu'  	=> 'Profil Menu',
+  'news_menu'     	=> 'Nyheder Menu',
+	'language_picker'	=> 'Language Picker',
+	'english_menu'		=> 'English Menu'
 ));
 
 /**

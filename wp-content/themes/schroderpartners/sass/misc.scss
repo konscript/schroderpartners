@@ -22,6 +22,32 @@ body {
 			margin: 0 auto;
 		}
 	}
+	
+	#language-picker {
+		float: right;
+		font-weight: bold;
+		margin: 0 0 5px 9px;
+		width: 114px;
+		
+		li {
+			border-left: 2px solid #000;
+			float: left;
+			padding: 0 5px;
+			
+			a {
+				color: $link-blue;
+				text-decoration: none;
+				
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			
+			&:first-child {
+				border: none;
+			}
+		}
+	}
 
 }
 
