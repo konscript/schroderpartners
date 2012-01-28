@@ -50,6 +50,7 @@
 					wp_nav_menu(array(
 						'theme_location' 	=> 'language_picker',
 						'menu_id'					=> 'language-picker',
+						'fallback_cb'			=> null,
 						'container'				=> 'false'
 					));
 				?>
