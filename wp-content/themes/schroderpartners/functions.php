@@ -68,6 +68,15 @@ register_sidebar(array(
 	'after´_title'	=> '',
 ));
 
+register_sidebar(array(
+  'name'          => 'Header',
+  'id'            => 'header-text',
+  'before_widget' => '<div class="header-text">',
+  'after_widget'  => '</div>',
+  'before_title'  => '',
+  'after´_title'  => '',
+));
+
 
 /**
 ##############################
