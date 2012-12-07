@@ -57,7 +57,8 @@
 				
 				<div class="clearer"></div>
         
-        <?php include('contact-module.php'); ?> 
+        <?php //include('contact-module.php'); ?> 
+        <?php dynamic_sidebar('header'); ?>
       </div>
       
       <div class="container" id="frontpage">
